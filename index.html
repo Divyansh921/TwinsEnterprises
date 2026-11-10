@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F7F3EC">
+    <meta name="description" content="Explore CNC-crafted décor, MDF products, custom nameplates and more from Twins Enterprises. Enquire about individual, custom and bulk orders.">
+    <title>Twins Enterprises | Precision-crafted décor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Twins Enterprises home">
+        <img src="logo%20(1).png" alt="Twins Enterprises" width="928" height="318">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+        <a href="./#collection">Collection</a>
+        <a href="./#about">About</a>
+        <a href="./#custom">Custom &amp; bulk</a>
+        <a class="nav-contact" href="https://wa.me/919015763074?text=Hello%20Twins%20Enterprises%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener noreferrer">Make an inquiry <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div id="home-view">
+        <section class="hero page-width" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> TWINS ENTERPRISES <span class="eyebrow-rule" aria-hidden="true"></span> CNC-CRAFTED DÉCOR</p>
+            <h1 id="hero-title">Precision crafted.<br><em>Beautifully designed.</em></h1>
+            <p class="hero-intro">Décor and display pieces made with CNC precision, thoughtful detail, and room for your own ideas.</p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#custom">Discuss a custom design <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-note"><span class="note-line" aria-hidden="true"></span> Custom designs, sizes &amp; bulk inquiries welcome</div>
+          </div>
+          <a class="hero-art" href="?product=premium-table-showpiece" aria-label="View Premium Table Showpiece details">
+            <span class="hero-art-image"><img src="Screenshot%202026-11-10%20225309.png" alt="Premium Table Showpiece advertisement showing an ornate Ganesh tabletop decoration" width="813" height="807"></span>
+            <span class="hero-art-caption"><span><strong>Made to be noticed</strong><small>Explore the Premium Table Showpiece</small></span><span class="round-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <span class="hero-index" aria-hidden="true">01 <span></span> 11</span>
+        </section>
+
+        <section class="category-section section-pad" aria-labelledby="category-title">
+          <div class="page-width">
+            <div class="section-heading">
+              <div><p class="eyebrow">A THOUGHTFUL COLLECTION</p><h2 id="category-title">Made for your space.</h2></div>
+              <a class="text-link" href="#collection">Browse all products <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="category-grid">
+              <a class="category-tile" href="#collection" data-category-link="Signage &amp; nameplates"><span class="category-number">01</span><span class="category-name">Signage &amp; nameplates</span><span class="category-arrow" aria-hidden="true">↗</span></a>
+              <a class="category-tile" href="#collection" data-category-link="Wall décor"><span class="category-number">02</span><span class="category-name">Wall décor</span><span class="category-arrow" aria-hidden="true">↗</span></a>
+              <a class="category-tile" href="#collection" data-category-link="Table &amp; desk décor"><span class="category-number">03</span><span class="category-name">Table &amp; desk décor</span><span class="category-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="collection-section section-pad" id="collection" aria-labelledby="collection-title">
+          <div class="page-width">
+            <div class="section-heading collection-heading">
+              <div><p class="eyebrow">THE COLLECTION</p><h2 id="collection-title">Objects with character.</h2><p class="section-intro">Explore each design, then get in touch to ask about it or discuss a custom version.</p></div>
+              <label class="search-wrap"><span class="visually-hidden">Search products</span><span class="search-icon" aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Find a product" autocomplete="off"></label>
+            </div>
+            <div class="catalogue-toolbar">
+              <div class="filter-list" id="category-filters" role="group" aria-label="Filter products by category"></div>
+              <p class="result-count" id="result-count" aria-live="polite"></p>
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+            <p class="empty-state" id="empty-state" hidden>No products match that search. Try another name or category.</p>
+          </div>
+        </section>
+
+        <section class="about-section section-pad" id="about">
+          <div class="page-width about-grid">
+            <div class="about-heading"><p class="eyebrow">THE TWINS ENTERPRISES APPROACH</p><h2>Considered detail.<br><em>Careful making.</em></h2></div>
+            <div class="about-copy"><p>Twins Enterprises creates décor and display products with CNC cutting, from illuminated pieces and nameplates to tabletop and wall décor.</p><p>Choose from the catalogue or get in touch to discuss a custom design or size. Product materials and dimensions are listed where they are specified in the supplied catalogue.</p><a class="text-link" href="#collection">Discover the products <span aria-hidden="true">→</span></a></div>
+            <div class="capability-list" aria-label="Capabilities">
+              <div><span class="capability-index">01</span><span>CNC precision</span><span class="capability-mark" aria-hidden="true">✳</span></div>
+              <div><span class="capability-index">02</span><span>Custom designs &amp; sizes</span><span class="capability-mark" aria-hidden="true">✳</span></div>
+              <div><span class="capability-index">03</span><span>Bulk order inquiries</span><span class="capability-mark" aria-hidden="true">✳</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="custom-section section-pad" id="custom">
+          <div class="page-width custom-panel">
+            <div class="custom-topline"><span>MADE A LITTLE MORE PERSONAL</span><span class="custom-symbol" aria-hidden="true">✳</span></div>
+            <div class="custom-content"><div><p class="eyebrow">CUSTOM &amp; BULK INQUIRIES</p><h2>Your idea,<br><em>made with care.</em></h2></div><div class="custom-aside"><p>Have a design or size in mind? Planning a bulk order? Tell us what you’re looking for and enquire directly on WhatsApp.</p><a class="button button-light" href="https://wa.me/919015763074?text=Hello%20Twins%20Enterprises%2C%20I%27d%20like%20to%20ask%20about%20a%20custom%20design%20or%20bulk%20order." target="_blank" rel="noopener noreferrer">Start a WhatsApp inquiry <span aria-hidden="true">↗</span></a></div></div>
+            <div class="custom-foot"><span>INDIVIDUAL ENQUIRIES</span><span>CUSTOM DESIGNS &amp; SIZES</span><span>WHOLESALE &amp; BULK</span></div>
+          </div>
+        </section>
+      </div>
+      <section id="product-view" class="product-detail page-width" hidden aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width">
+        <div class="footer-main">
+          <a class="footer-brand" href="./" aria-label="Twins Enterprises home"><img src="logo%20(1).png" alt="Twins Enterprises" width="928" height="318"></a>
+          <div class="footer-note"><p>Thoughtful décor.<br>Precision made.</p><a class="text-link" href="#collection">Explore the collection <span aria-hidden="true">→</span></a></div>
+          <div class="footer-contact"><p class="eyebrow">GET IN TOUCH</p><a href="tel:+919015763074">+91 9015763074</a><a href="mailto:twinsenterprises23@gmail.com">twinsenterprises23@gmail.com</a><a href="https://wa.me/919015763074?text=Hello%20Twins%20Enterprises%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="current-year"></span> TWINS ENTERPRISES</span><span>PRECISION CRAFTED. BEAUTIFULLY DESIGNED.</span><a href="#main">Back to top ↑</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
